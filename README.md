@@ -17,7 +17,7 @@ git clone https://github.com/elliot-jimeno/react-starter.git my-new-project
 cd my-new-project
 ```
 
-### 2. Pushed Cloned Code to new Repo
+### 2. Push Cloned Code to new Repo
 
 ```sh
 git remote set-url origin https://github.com/yourusername/new-repo.git
