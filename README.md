@@ -17,7 +17,7 @@ Click the **Fork** button at the top right of this repo to create your own copy 
 ### 2. Clone Your Fork
 
 ```sh
-git clone https://github.com/elliot-jimeno/react-starter.git my-new-project
+git clone https://github.com/your-username/react-starter.git my-new-project
 cd my-new-project
 ```
 
