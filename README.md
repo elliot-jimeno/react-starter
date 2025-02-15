@@ -10,15 +10,18 @@ A simple React+Vite starter template with a pre-built header, footer, and landin
 
 ## Getting Started
 
-### 1. Fork the Repository
-
-Click the **Fork** button at the top right of this repo to create your own copy under your GitHub account.
-
-### 2. Clone Your Fork
+### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/react-starter.git my-new-project
+git clone https://github.com/elliot-jimeno/react-starter.git my-new-project
 cd my-new-project
+```
+
+### 2. Pushed Cloned Code to new Repo
+
+```sh
+git remote set-url origin https://github.com/yourusername/new-repo.git
+git push -u origin main
 ```
 
 ### 3. Install Dependencies
