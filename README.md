@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# React Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React+Vite starter template with a pre-built header, footer, and landing page to help you quickly spin up new projects.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🏗 **Pre-built Layout**: Includes a header, footer, and a basic landing page.
+- 🎨 **Styled Components**: Basic styling applied with CSS (can be easily customized).
+- ⚡ **Fast Setup**: Fork the repo, install dependencies, and start coding!
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Fork the Repository
 
-- Configure the top-level `parserOptions` property like this:
+Click the **Fork** button at the top right of this repo to create your own copy under your GitHub account.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 2. Clone Your Fork
+
+```sh
+git clone https://github.com/elliot-jimeno/react-starter.git my-new-project
+cd my-new-project
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 3. Install Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm install
 ```
+
+### 4. Start the Development Server
+
+```sh
+npm run dev
+```
+
+The app will be available at `http://localhost:5173/`.
+
+## Customization
+
+### Changing the Project Name
+
+Make sure to update the project name in `/index.html`:
+
+```html
+<title>My New Project</title>
+```
+
+### Updating Styles
+
+Modify `src/App.css` and `src/index.css` to fit your needs.
+
+### Replacing Content
+
+- **Header/Footer**: Edit `src/components/Header.tsx` and `src/components/Footer.tsx`.
+- **Landing Page**: Modify `src/pages/Landing.tsx`.
+
+## Deployment
+
+To build the project for production, run:
+
+```sh
+npm run build
+```
+
+This will create an optimized `dist/` folder that you can deploy to services like Vercel, Netlify, or GitHub Pages.
+
+---
+
+Happy coding! 🚀
