@@ -1,4 +1,6 @@
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
@@ -20,7 +22,10 @@ function Header() {
         <a className="header-login" href="">
           Login
         </a>
-        <div className="header-signup">Start Your Free Trial</div>
+        <div className="header-signup">
+          <div className="trial-text">Start Your Free Trial</div>
+          <FontAwesomeIcon className="arrow-right" icon={faArrowRight} />
+        </div>
       </div>
     </div>
   );
