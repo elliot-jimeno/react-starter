@@ -4,6 +4,15 @@
 @media (min-width: 750px) {
 }
 
+#header-logo {
+  height: 55px;
+  position: absolute;
+  left: 40px;
+  /* below properties will be removed when actual image is inserted */
+  width: 55px;
+  background-color: var(--color-primary);
+}
+
 #header,
 #header-container,
 #header-container .header-signup {
@@ -31,19 +40,25 @@
 }
 
 #header-container .header-signup {
+  transition: all 0.3s ease-in-out;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   border-radius: 25px;
   height: 45px;
   cursor: pointer;
-  padding: 0 20px;
+  line-height: 12px;
+  font-weight: 500;
 }
 
-#header-logo {
-  height: 55px;
-  position: absolute;
-  left: 40px;
-  /* below properties will be removed when actual image is inserted */
-  width: 55px;
-  background-color: var(--color-primary);
+.header-signup .trial-text {
+  margin: auto 8px auto 23px;
+}
+
+.header-signup .arrow-right {
+  transition: transform 0.3s ease-in-out;
+  margin-right: 23px;
+}
+
+.header-signup:hover .arrow-right {
+  transform: translateX(5px); /* Moves the arrow 5px to the right */
 }
