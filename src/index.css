@@ -1,8 +1,11 @@
 :root {
-  --background-color: #242424;
-  --header-height: 90px;
-  --color: rgb(255, 255, 255, 0.87);
-  --color-primary: #37c8abff;
+  --background-color: #ffffff;
+  --color: black;
+  --color-primary: #aa60c8;
+  --color-primary-2: #d69ade;
+  --color-primary-3: #eabde6;
+  --color-primary-4: #ffdfef;
+  --header-height: 75px;
   --max-width: 1300px;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -10,7 +13,7 @@
   font-weight: 400;
 
   color: var(--color);
-  background-color: var(--background-color);
+  background-color: turquoise;
 }
 
 body {
@@ -19,3 +22,11 @@ body {
 }
 
 /* Define any other global/root element styles here */
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
